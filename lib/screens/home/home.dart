@@ -22,6 +22,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0.0,
         leading: _isSearching ? const BackButton() : Container(),
         title: _isSearching ? _buildSearchField() : const Text("Information"),
         actions: _buildActions(),
